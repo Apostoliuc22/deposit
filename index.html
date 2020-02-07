@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Депозитный калькулятор</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <form class="form1" name="depozit">
+        <p class="calc">Депозитный калькулятор </p><br><br>
+        Сумма депозита: <br>
+        <input class="number1" type="number" name="summ"> <br><br>
+        Период: <br>
+        <select class="select1" name="months">
+            <option value="3">3 (минимум)</option>
+            <option value="6">6 (полгода)</option>
+            <option value="12" selected>12 (год)</option>
+            <option value="18">18 (1.5 года)</option>
+            <option value="24">24 (2 года)</option>
+            <option value="30">30 (2.5 года)</option>
+            <option value="36">36 (3 года)</option>
+            <option value="60">60 (5 лет)</option>
+        </select><br><br>
+        Процентная ставка: <br>
+        <input class="interest1" type="number" name="interest"><br>
+        <div id="earns"></div>
+    </form>
+    <script src="java.js"></script>
+
+</body>
+
+</html>
